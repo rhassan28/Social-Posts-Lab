@@ -1,0 +1,7 @@
+<form id="overlay" ng-show="$ctrl.formToggle" ng-submit="$ctrl.addPost({newPost: $ctrl.newPost})">
+    <p>Title</p>
+    <input expand-on-focus type="text" ng-model="$ctrl.newPost.title">
+    <p>Thoughts</p>
+    <textarea expand-on-focus ng-model="$ctrl.newPost.thought" name="" id="" cols="30" rows="10"></textarea>
+    <button>Add Post</button>
+</form>

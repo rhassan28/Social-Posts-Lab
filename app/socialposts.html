@@ -1,0 +1,14 @@
+<section class="main">
+    <section class="title">
+        <p>My Thoughts</p>
+        <button class="btn" ng-click="$ctrl.showForm()">New Thought</button>
+    </section>
+
+    <section ng-repeat="posts in $ctrl.postsLibrary track by $index">
+        <post posts-library="posts" remove-post="$ctrl.removePost(index)"></post>
+    </section>
+
+
+    <postform add-post="$ctrl.addPost(newPost)" form-toggle="$ctrl.formToggle" show-form="$ctrl.showForm()"></postform>
+
+</section>
